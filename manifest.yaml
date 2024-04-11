@@ -40,8 +40,9 @@ spec:
   volumeMode: Filesystem
   accessModes:
     - ReadWriteMany
-  hostPath:
-    path: "/data/pv002"
+  nfs:
+    server: wm-k8s-nfs
+    path: /k8s_nfs/jenkins_data
 
 ---
 
